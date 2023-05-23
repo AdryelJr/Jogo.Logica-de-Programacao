@@ -2,9 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-img{
-    background-position: fixed;
+
+.div-opcao{
+    margin-left: 10%;
+    width: 15%;
+    height: 100vh;
+    background-color: #000;
+    position: absolute;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.titulo-h1{
+    font-size: 28pt;
+}
+
+
+main{
+    background-image: url('/img/space-backgrond.jpg');
+    position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
