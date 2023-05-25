@@ -9,7 +9,7 @@
 
 .div-opcao{
     margin-left: 10%;
-    width: 19%;
+    width: 20%;
     height: 100vh;
     background-color: rgb(0, 0, 0);
     opacity: 0.7;
@@ -55,13 +55,13 @@ main{
 }
 
 li{
-    padding: 13px;
+    padding: 8%;
 }
 
 a{  
     font-weight: 500;
     margin-left: 10%;
-    font-size: 18pt;
+    font-size: 140%;
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
     color: #fff;
     transition: all 0.1s ease-in-out;
