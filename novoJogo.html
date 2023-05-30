@@ -2,35 +2,50 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Animacão do Bloco Correndo</title>
-  
-  <!-- links -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacão do Bloco Correndo</title>
+
+    <!-- links -->
     <link rel="stylesheet" href="CSS/novoJogo.css">
+    <link rel="stylesheet" href="CSS/caixa-dialogos.css">
 
 </head>
 
 <body>
-  <div class="container">
-    <div class="cat">
-        <img src="img/cat-new-cats.gif" alt="gato" width="120px">
-    </div>
+    <div class="container">
+        <div class="cat">
+            <img src="img/cat-new-cats.gif" alt="gato" width="120px">
+        </div>
 
-    <div class="catParado">
-        <img src="img/catParado.gif" alt="gato" width="120px">
-    </div>
-    <script>
-        const cat = document.querySelector('.cat');
-        const catParado = document.querySelector('.catParado');
+        <div class="container-caixa-dialogo">
+            <h2 class="title">Bem-vindo!</h2>
+            <p class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis optio commodi magni animi cum debitis
+                corrupti vitae reprehenderit delectus velit vero quaerat laboriosam, fugit amet dolore tempora illum id
+                modi.</p>
 
-        cat.addEventListener('animationend', function(){
-            cat.style.display = 'none';
-            catParado.style.display = 'block';
-        });
-    </script>
-  </div>
+            <a href="#" class="btn">Jogar agora</a>
+        </div>
+
+        <div class="catParado">
+            <img src="img/catParado.gif" alt="gato" width="120px">
+        </div>
+        <script>
+            const cat = document.querySelector('.cat');
+            const catParado = document.querySelector('.catParado');
+            const caixaDialogo = document.querySelector('.container-caixa-dialogo');
+
+            cat.addEventListener('animationend', function () {
+                cat.style.display = 'none';
+                catParado.style.display = 'block';
+                caixaDialogo.style.display = 'flex';
+                caixaDialogo.classList.add('aparecendo');
+            });
+
+            
+        </script>
+    </div>
 </body>
 
 </html>
