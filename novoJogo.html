@@ -18,16 +18,16 @@
         <img src="img/cat-new-cats.gif" alt="gato" width="120px">
     </div>
 
-    <div class="catAbaixado">
-        <img src="img/catAbaixado.gif" alt="gato" width="120px">
+    <div class="catParado">
+        <img src="img/catParado.gif" alt="gato" width="120px">
     </div>
     <script>
         const cat = document.querySelector('.cat');
-        const catAbaixado = document.querySelector('.catAbaixado');
+        const catParado = document.querySelector('.catParado');
 
         cat.addEventListener('animationend', function(){
             cat.style.display = 'none';
-            catAbaixado.style.display = 'block';
+            catParado.style.display = 'block';
         });
     </script>
   </div>
