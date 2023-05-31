@@ -18,7 +18,9 @@
         <div class="cat">
             <img src="img/cat-new-cats.gif" alt="gato" width="120px">
         </div>
-
+        <div class="btn-voltar">
+            <a class="btn" href="index.html">Voltar</a>
+        </div>
         <div class="container-caixa-dialogo">
             <h2 class="title">Bem-vindo!</h2>
             <p class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis optio commodi magni
@@ -26,7 +28,11 @@
                 corrupti vitae reprehenderit delectus velit vero quaerat laboriosam, fugit amet dolore tempora illum id
                 modi.</p>
 
-            <a href="#" class="btn">Jogar agora</a>
+            <div class="container-btn">
+                <div class="btn-jogar">
+                    <a href="#" class="btn">Jogar agora</a>
+                </div>
+            </div>
         </div>
 
         <div class="catParado">
@@ -41,10 +47,10 @@
                 cat.style.display = 'none';
                 catParado.style.display = 'block';
 
-                setTimeout (function() {
+                setTimeout(function () {
                     caixaDialogo.style.display = 'flex';
                     caixaDialogo.classList.add('aparecendo');
-                },600);
+                }, 600);
             });
 
 
