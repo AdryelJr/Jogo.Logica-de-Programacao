@@ -21,7 +21,8 @@
 
         <div class="container-caixa-dialogo">
             <h2 class="title">Bem-vindo!</h2>
-            <p class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis optio commodi magni animi cum debitis
+            <p class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis optio commodi magni
+                animi cum debitis
                 corrupti vitae reprehenderit delectus velit vero quaerat laboriosam, fugit amet dolore tempora illum id
                 modi.</p>
 
@@ -39,11 +40,14 @@
             cat.addEventListener('animationend', function () {
                 cat.style.display = 'none';
                 catParado.style.display = 'block';
-                caixaDialogo.style.display = 'flex';
-                caixaDialogo.classList.add('aparecendo');
+
+                setTimeout (function() {
+                    caixaDialogo.style.display = 'flex';
+                    caixaDialogo.classList.add('aparecendo');
+                },600);
             });
 
-            
+
         </script>
     </div>
 </body>
