@@ -15,6 +15,9 @@
 
 <body>
     <div class="container">
+
+        <audio id="somNovoJogo" src="sounds/novoJogo.mp3"></audio>
+
         <div class="cat">
             <img src="img/cat-new-cats.gif" alt="gato" width="120px">
         </div>
@@ -23,7 +26,8 @@
         </div>
         <div class="container-caixa-dialogo">
             <h2 class="title">Bem-vindo!</h2>
-            <p class="message">Bem-vindos a "O Pulo do Gato"! Preparem-se para desafios incríveis, enigmas intrigantes e muita diversão. Aprimore suas habilidades, conhecimentos e conquiste a vitória! Boa sorte!</p>
+            <p class="message">Bem-vindos a "O Pulo do Gato"! Preparem-se para desafios incríveis, enigmas intrigantes e
+                muita diversão. Aprimore suas habilidades, conhecimentos e conquiste a vitória! Boa sorte!</p>
 
             <div class="container-btn">
                 <div class="btn-jogar">
@@ -36,6 +40,24 @@
             <img src="img/catParado.gif" alt="gato" width="120px">
         </div>
         <script>
+
+            window.addEventListener('load', function () {
+                var somNovoJogo = document.getElementById('somNovoJogo');
+                somNovoJogo.volume = 0;
+                somNovoJogo.play();
+
+                function increaseVolume() {
+                    if (somNovoJogo.volume < 1) {
+                        somNovoJogo.volume += 0.1;
+                        setTimeout(increaseVolume, 3000);
+                    }
+                }
+
+                increaseVolume();
+            });
+
+
+
             const cat = document.querySelector('.cat');
             const catParado = document.querySelector('.catParado');
             const caixaDialogo = document.querySelector('.container-caixa-dialogo');
