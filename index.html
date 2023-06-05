@@ -16,22 +16,33 @@
 
 <body>
     <section>
-        <main>
+        <main onclick="tocarSom()">
             <div class="div-opcao">
                 <div class="titulo-h1">
                     <h1> &nbsp;O pulo <br> do Gato</h1>
                 </div>
                 <div class="parte-baixo">
-                   <ul>
+                    <ul>
                         <li><a href="novoJogo.html">NOVO JOGO</a></li>
                         <li><a href="#">CARREGAR</a></li>
                         <li><a href="#">CONFIGURAÇÕES</a></li>
                         <li><a href="extras.html">EXTRAS</a></li>
-                   </ul>
+                    </ul>
                 </div>
             </div>
         </main>
-        
+
+        <audio id="som">
+            <source src="sounds/musica.mp3" type="audio/mpeg">
+        </audio>
+
+        <script>
+            function tocarSom() {
+                var audio = document.getElementById('som');
+                audio.play();
+            }
+        </script>
+
     </section>
 </body>
 
